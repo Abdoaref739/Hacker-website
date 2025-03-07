@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 8, 8);
+}
+.game-completed-div{
+    position: absolute;
+    width: 650px;
+    height: 300px;
+    background-color: rgb(7, 6, 6);
+    margin-top: 510px;
+    border: 10px solid transparent;
+    border-radius: 12px;
+    border-top-color: rgb(0, 153, 255);
+}
+.header-image{
+    position: absolute;
+    width: 410px;
+    height: 30px;
+    margin-top: 45px;
+    margin-left: 120px;
+}
+.response-text{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    margin-top: 110px;
+    margin-left: 170px;
+}
+.return-to-homepage-button{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 153, 255);
+    margin-top: 150px;
+    margin-left: 210px;
+}
+
+
+@media (max-width: 750px) and (min-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
+}

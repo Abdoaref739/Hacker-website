@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration-completed | STEMer</title>
+    <link rel="stylesheet" href="./phishing-game-success.css">
+</head>
+<body><div class="game-completed-div">
+    
+    <img src="./images/game-completed1.png" class="header-image">
+    <h2 class="response-text">your response has been recorded!</h2>
+    <a href="./index.html" class="return-to-homepage-button">Return to the homepage!</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script>
+        window.onload = function(){
+            
+            confetti({
+    particleCount: 100,
+    spread: 100,
+                colors:['#00aeff', '#003af7', '#5890fa'],
+});
+        }
+    </script>
+</body>
+</html>

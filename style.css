@@ -1,0 +1,744 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+
+  
+  ::selection {
+    color: rgb(255, 255, 255);
+    background: #003d00;
+  }
+
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border: 2px solid transparent;
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #00ccff;
+    border: 2px solid transparent;
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00aeff;
+  }
+  
+
+#animation-style{
+    position: absolute;
+    display: none;
+}
+.hero-section{
+    width: 100%;
+    height: 635px;
+    background-image: url("./images/image1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.blur-hero-section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.527);
+    margin-top: 2px;
+}
+
+.hacker-header-text{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 600px;
+}
+.version-text{
+    position: absolute;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 1200px;
+}
+.hero-main-text{
+    position: absolute;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 29px;
+    color: white;
+    margin-top: 248px;
+    margin-left: 500px;
+}
+.hacker-hero-word{
+    color: rgb(19, 94, 0);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.hero-paragraph{
+    position: absolute;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-top: 300px;
+    margin-left: 320px;
+}
+#hero-start-button{
+    position: absolute;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 190px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+    margin-top: 380px;
+    margin-left: 580px;
+    background-color:rgb(19, 94, 0);
+    border-radius: 7px;
+    transition: 0.7s ease;
+    border: 5px solid transparent;
+    border-bottom-color: rgb(14, 71, 0);
+    cursor: pointer;
+}
+#hero-start-button:hover{
+    background-color:rgb(21, 105, 0);
+}
+.what-we-do-blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.836);
+}
+.what-we-do-section{
+    position: absolute;
+    width: 100%;
+    height: 580px;
+    background-image: url("./images/what-we-do.jpg");
+}
+.what-we-do-section-header{
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 545px;
+}
+.box1-div{
+    position: absolute;
+    width: 380px;
+    height: 250px;
+    background-color: rgb(14, 13, 13);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin-top: 200px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+.box1-div:hover{
+    transition: 0.7s ease;
+    box-shadow: 0px 0px 3px 2px rgb(0, 195, 255);
+}
+.box2-div{
+    position: absolute;
+    width: 380px;
+    height: 250px;
+    background-color: rgb(14, 13, 13);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin-top: 200px;
+    margin-left: 480px;
+    cursor: pointer;
+}
+.box2-div:hover{
+    transition: 0.7s ease;
+    box-shadow: 0px 0px 3px 2px rgb(0, 195, 255);
+}
+.box3-div{
+    position: absolute;
+    width: 380px;
+    height: 250px;
+    background-color: rgb(14, 13, 13);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin-top: 200px;
+    margin-left: 880px;
+    cursor: pointer;
+}
+.box3-div:hover{
+    transition: 0.7s ease;
+    box-shadow: 0px 0px 3px 2px rgb(0, 195, 255);
+}
+.icon1-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(24, 22, 22);
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 55px;
+}
+.icon2-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(24, 22, 22);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 85px;
+}
+.icon3-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(24, 22, 22);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 85px;
+}
+#icon1{
+    font-size: 20px;
+    color: white;
+}
+#icon2{
+    font-size: 20px;
+    color: white;
+}
+#icon3{
+    font-size: 20px;
+    color: white;
+}
+.terminal-image{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    margin-top: 160px;
+    margin-left: 800px;
+}
+.linux-image{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    margin-top: 190px;
+    margin-left: 650px;
+}
+.start-learning-section1{
+    position: absolute;
+    width: 100%;
+    height: 580px;
+    background-color: black;
+    background-size: 40px 40px;
+    margin-top: 560px;
+}
+.blur2-section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+}
+.start-now-section-header{
+    position: absolute;
+    width: 450px;
+    height: 250px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: white;
+    margin-top: 200px;
+    margin-left: 250px;
+}
+#start-learning-button{
+    position: absolute;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 190px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+    margin-top: 320px;
+    margin-left: 330px;
+    background-color:rgb(19, 94, 0);
+    border-radius: 7px;
+    transition: 0.7s ease;
+    border: 5px solid transparent;
+    border-bottom-color: rgb(14, 71, 0);
+    cursor: pointer;
+}
+#start-learning-button:hover{
+    background-color:rgb(21, 105, 0);
+}
+
+.start-learning-section-word{
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+#code-tags-icon{
+    position: absolute;
+    font-size: 135px;
+    opacity: 20%;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+#terminal-icon{
+    position: absolute;
+    font-size: 95px;
+    opacity: 20%;
+    margin-top: 450px;
+    margin-left: 950px;
+}
+.hacking-tools-section{
+    position: absolute;
+    width: 100%;
+    height: 580px;
+    background-image: url("./images/image3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 1130px;
+}
+
+.start-now-section-header2{
+    position: absolute;
+    width: 550px;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: 600;
+    margin-top: 200px;
+    margin-left: 400px;
+}
+
+.blur-hacking-tools-section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+#start-learning-button2{
+    position: absolute;
+    position: absolute;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 190px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+    margin-top: 320px;
+    margin-left: 550px;
+    background-color:rgb(19, 94, 0);
+    border-radius: 7px;
+    transition: 0.7s ease;
+    border: 5px solid transparent;
+    border-bottom-color: rgb(14, 71, 0);
+    cursor: pointer;
+}
+#start-learning-button2:hover{
+    background-color:rgb(21, 105, 0);
+}
+
+
+
+.achievements-section{
+    position: absolute;
+    width: 100%;
+    height: 580px;
+    background-image: url("./images/achievements-image.jpg");
+    background-size: cover;
+   background-attachment: fixed;
+   background-position: 0px;
+    margin-top: 1710px;
+}
+
+
+
+
+.achievements-header{
+    position: absolute;
+    width: 480px;
+    height: 50px;
+    margin-top: 200px;
+    margin-left: 410px;
+}
+.blur-achievements-section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.582);
+}
+#achievements-section-button{
+    position: absolute;
+    position: absolute;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 230px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+    margin-top: 320px;
+    margin-left: 540px;
+    background-color:rgb(19, 94, 0);
+    border-radius: 7px;
+    transition: 0.7s ease;
+    border: 5px solid transparent;
+    border-bottom-color: rgb(14, 71, 0);
+    cursor: pointer;
+}
+#achievements-section-button:hover{
+    background-color:rgb(21, 105, 0);
+}
+
+
+
+.contact-us-section{
+    position: absolute;
+    width: 100%;
+    height: 580px;
+    margin-top: 2290px;
+    background-color: rgb(8, 8, 8);
+}
+#dev-image{
+    position: absolute;
+    width: 450px;
+    height: 350px;
+    margin-top: 110px;
+    margin-left: 130px;
+    border-radius: 10px;
+}
+
+.get-in-touch-text{
+    position: absolute;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: 600;
+    margin-top: 105px;
+    margin-left: 850px;
+}
+
+#email-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 500px;
+        height: 60px;
+        background-color: rgb(22, 22, 22);
+        font-size: 18px;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-weight: 600;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        margin-top: 200px;
+        margin-left: 730px;
+    
+}
+#email-div:hover{
+    transition: 0.7s ease;
+    box-shadow: 0px 0px 3px 2px rgb(0, 195, 255);
+}
+
+#phone-number-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 500px;
+    height: 60px;
+    background-color: rgb(22, 22, 22);
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin-top: 290px;
+    margin-left: 730px;
+
+}
+#phone-number-div:hover{
+transition: 0.7s ease;
+box-shadow: 0px 0px 3px 2px rgb(0, 195, 255);
+}
+
+.dev-name{
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: 400;
+    margin-top: 475px;
+    margin-left: 160px;
+}
+.footer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    box-shadow: 0 0 4px 5px rgb(10, 10, 10);
+    margin-top: 2870px;
+}
+.footer-text{
+    position: absolute;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 19px;
+    color: white;
+}
+.box1-text{
+    position: absolute;
+    width: 250px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-top: 150px;
+    margin-left: 155px;
+}
+.box2-text{
+    position: absolute;
+    width: 210px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 19px;
+    color: white;
+    margin-top: 180px;
+    margin-left: 65px;
+}
+.box3-text{
+    position: absolute;
+    width: 220px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 19px;
+    color: white;
+    margin-top: 180px;
+    margin-left: 15px;
+}
+@media (max-width: 750px) and (min-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
+    .hero-section{
+        width: 100%;
+        height: 635px;
+        background-position: -300px;
+    }
+    .blur-hero-section{
+        width: 100%;
+        height: 635px;
+    }
+    
+    .hacker-header-text{
+        font-size: 35px;
+    }
+    .version-text{
+       font-size: 22px;
+        margin-top: 30px;
+        margin-left: 400px;
+    }
+    .hero-main-text{
+       font-size: 26px;
+        margin-top: 190px;
+        margin-left: 80px;
+    }
+    .hero-paragraph{
+        font-size: 19px;
+        margin-top: 240px;
+        margin-left: 30px;
+    }
+    #hero-start-button{
+        margin-top: 330px;
+        margin-left: 150px;
+    }
+    
+    .what-we-do-blur{
+        width: 100%;
+        height: 100%;
+    }
+    .what-we-do-section{
+        width: 100%;
+        height: 880px;
+    }
+    .what-we-do-section-header{
+        position: absolute;
+        margin-top: 90px;
+        margin-left: 115px;
+    }
+    .box1-div{
+        width: 310px;
+        height: 180px;
+        margin-top: 200px;
+        margin-left:100px;
+    }
+    .box2-div{
+        width: 310px;
+        height: 180px;
+        margin-top: 420px;
+        margin-left:100px;
+    }
+    .box3-div{
+        width: 310px;
+        height: 180px;
+        margin-top: 640px;
+        margin-left:100px;
+    }
+    .terminal-image{
+        display: none;
+    }
+    .linux-image{
+        display: none;
+    }
+    .start-learning-section1{
+        height: 380px;
+        margin-top: 880px;
+    }
+    .start-now-section-header{
+        width: 550px;
+        font-size: 28px;
+        margin-top: 120px;
+        margin-left: 20px;
+    }
+    #start-learning-button{
+        margin-top: 220px;
+        margin-left: 150px;
+    }
+    #code-tags-icon{
+        display: none;
+    }
+    #terminal-icon{
+        display: none;
+    }
+    .hacking-tools-section{
+        height: 450px;
+        margin-top: 1260px;
+    }
+    
+    .start-now-section-header2{
+        font-size: 28px;
+        margin-top: 150px;
+        margin-left: 70px;
+    }
+    #start-learning-button2{
+        margin-top: 230px;
+        margin-left: 150px;
+    }
+   
+    .box1-text{
+        margin-top: 135px;
+        margin-left: 160px;
+    }
+    .box2-text{
+        font-size: 15px;
+        margin-top: 135px;
+        margin-left: 130px;
+    }
+    .box3-text{
+        margin-top: 135px;
+        margin-left: 130px;
+    }
+    .icon2-div{
+        margin-top: 30px;
+    margin-left: 58px;
+    }
+    .icon3-div{
+        margin-top: 30px;
+    margin-left: 58px;
+    }
+
+    .achievements-section{
+        height: 580px;
+       background-position: -200px;
+    }
+    
+    .achievements-header{
+        width: 250px;
+        height: 30px;
+        margin-top: 200px;
+        margin-left: 120px;
+    }
+    
+    .blur-achievements-section{
+        width: 100%;
+        height: 100%;
+    }
+    #achievements-section-button{
+        margin-top: 280px;
+        margin-left: 130px;
+    }
+    
+.contact-us-section{
+    width: 100%;
+    height: 900px;
+}
+#dev-image{
+    margin-top: 400px;
+    margin-left: 20px;
+}
+
+.get-in-touch-text{
+    position: absolute;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: 600;
+    margin-top: 105px;
+    margin-left: 50px;
+}
+
+#email-div{
+        width: 460px;
+        height: 50px;
+        font-size: 16px;
+        margin-top: 200px;
+        margin-left: 10px;
+    
+}
+#email-div:hover{
+    transition: 0.7s ease;
+    box-shadow: 0px 0px 3px 2px rgb(0, 195, 255);
+}
+
+#phone-number-div{
+    width: 460px;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 275px;
+    margin-left: 10px;
+
+}
+#phone-number-div:hover{
+transition: 0.7s ease;
+box-shadow: 0px 0px 3px 2px rgb(0, 195, 255);
+}
+
+.dev-name{
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-top: 760px;
+    margin-left: 50px;
+}
+
+.footer{
+    height: 80px;
+    margin-top: 3150px;
+}
+.footer-text{
+    font-size: 14px;
+}
+
+  }

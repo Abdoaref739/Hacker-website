@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achevements | Hacker!</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(5, 5, 5);
+        }
+        .container{
+            position: absolute;
+            width: 800px;
+            height: 450px;
+            background-color: rgb(17, 17, 17);
+            border: 1px solid transparent;
+            border-radius: 10px;
+            margin-top: 680px;
+        }
+        .navigation-bar{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 60px;
+            background-color: rgb(34, 33, 33);
+            border-radius: 10px;
+        }
+        #my-achievements{
+            position: absolute;
+            width: 50%;
+            height: 55px;
+            margin-right: 400px;
+            background-color: transparent;
+            border-radius: 10px;
+            border: 1px solid white;
+            color: white;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 0px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        #all-achievements{
+            position: absolute;
+            width: 50%;
+            height: 55px;
+            margin-left: 400px;
+            background-color: transparent;
+            border-radius: 10px;
+            border: 1px solid white;
+            color: white;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        #achievement1-div{
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            background-color: rgb(0, 0, 0);
+            border: 1px solid transparent;
+            border-radius: 10px;
+            margin-top: 100px;
+            margin-left: 120px;
+            cursor: pointer;
+        }
+        #achievement1-div:hover{
+            transition: 0.7s ease;
+            box-shadow: 0px 0px 3px 2px rgb(0, 195, 255);
+                }
+        .achievement1-img{
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        #achievement2-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            background-color: rgb(0, 0, 0);
+            border: 1px solid transparent;
+            border-radius: 10px;
+            margin-top: 100px;
+            margin-left: 320px;
+            cursor: pointer;
+        }
+        #achievement2-div:hover{
+            transition: 0.7s ease;
+            box-shadow: 0px 0px 3px 2px rgb(0, 195, 255);
+                }
+        .achievement2-img{
+            position: absolute;
+            width: 160px;
+            height: 160px;
+
+        }
+
+        #achievement3-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            background-color: rgb(0, 0, 0);
+            border: 1px solid transparent;
+            border-radius: 10px;
+            margin-top: 100px;
+            margin-left: 520px;
+            cursor: pointer;
+        }
+        #achievement3-div:hover{
+            transition: 0.7s ease;
+            box-shadow: 0px 0px 3px 2px rgb(0, 195, 255);
+                }
+        .achievement3-img{
+            position: absolute;
+            width: 150px;
+            height: 150px;
+
+        }
+
+        .achievements-header{
+            position: absolute;
+            width: 360px;
+            height: 40px;
+            margin-top: 100px;
+        }
+
+
+
+
+
+        #my-achievement1-div{
+            display: none;
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            background-color: rgb(0, 0, 0);
+            border: 1px solid transparent;
+            border-radius: 10px;
+            margin-top: 100px;
+            margin-left: 120px;
+            cursor: pointer;
+        }
+        #my-achievement1-div:hover{
+            transition: 0.7s ease;
+            box-shadow: 0px 0px 3px 2px rgb(0, 195, 255);
+                }
+        .my-achievement1-img{
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            margin-top: 10px;
+            margin-left: 10px;
+
+        }
+
+        @media (max-width: 750px) and (min-width: 480px) {
+            .container{
+             position: absolute;
+            width: 400px;
+            height: 700px;
+            margin-top: 900px;
+        }
+
+        #my-achievements{
+            margin-right: 200px;
+        }
+        #all-achievements{
+            margin-left: 200px;
+        }
+        #achievement2-div{
+            margin-top: 300px;
+            margin-left: 120px;
+        }
+
+        #achievement3-div{
+            margin-top: 500px;
+            margin-left: 120px;
+        }
+        #achievement3-div:hover{
+            transition: 0.7s ease;
+            box-shadow: 0px 0px 3px 2px rgb(0, 195, 255);
+                }
+        .achievement3-img{
+            position: absolute;
+            width: 150px;
+            height: 150px;
+
+        }
+
+        .achievements-header{
+            position: absolute;
+            width: 360px;
+            height: 40px;
+            margin-top: 100px;
+        }
+
+
+
+
+
+        #my-achievement1-div{
+            display: none;
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            background-color: rgb(0, 0, 0);
+            border: 1px solid transparent;
+            border-radius: 10px;
+            margin-top: 100px;
+            margin-left: 120px;
+            cursor: pointer;
+        }
+        #my-achievement1-div:hover{
+            transition: 0.7s ease;
+            box-shadow: 0px 0px 3px 2px rgb(0, 195, 255);
+                }
+        .my-achievement1-img{
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            margin-top: 10px;
+            margin-left: 10px;
+
+        }
+
+        }
+
+    </style>
+</head>
+<body>
+    <img src="./images/achievements-text.png" class="achievements-header">
+    <div class="container">
+        <div class="navigation-bar">
+            <button id="my-achievements">My Achievements!</button>
+            <button id="all-achievements">All Achievements!</button>
+        </div>
+        <div class="my-achievements">
+            <div id="my-achievement1-div">
+                <img src="./images/WhatsApp_Image_2025-03-05_at_15.02.26_7f71bcb6-removebg-preview.png" class="my-achievement1-img">
+            </div>
+            
+        </div>
+        <div class="all-achievements">
+            <div id="achievement1-div">
+                <img src="./images/WhatsApp_Image_2025-03-05_at_15.02.26_7f71bcb6-removebg-preview.png" class="achievement1-img">
+            </div>
+            <div id="achievement2-div">
+                <img src="./images/WhatsApp_Image_2025-03-05_at_15.00.42_42ce6542-removebg-preview.png" class="achievement2-img">
+            </div>
+            <div id="achievement3-div">
+                <img src="./images/WhatsApp_Image_2025-03-05_at_15.51.23_4e3056b5-removebg-preview.png" class="achievement3-img">
+            </div>
+        </div>
+    </div>
+    <script src="achievements-page.js"></script>
+</body>
+</html>
