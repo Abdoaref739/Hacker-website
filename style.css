@@ -160,6 +160,7 @@ html{
 }
 .box3-div{
     position: absolute;
+    display: none;
     width: 0px;
     height: 250px;
     background-color: rgb(14, 13, 13);
@@ -226,6 +227,7 @@ html{
 }
 .terminal-image{
     position: absolute;
+    display: none;
     width: 400px;
     height: 250px;
     margin-top: 160px;
@@ -427,7 +429,7 @@ html{
 }
 
 #email-div{
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         position: absolute;
@@ -451,7 +453,7 @@ html{
 }
 
 #phone-number-div{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: absolute;
