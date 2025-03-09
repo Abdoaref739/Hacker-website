@@ -160,7 +160,7 @@ html{
 }
 .box3-div{
     position: absolute;
-    width: 380px;
+    width: 0px;
     height: 250px;
     background-color: rgb(14, 13, 13);
     border: 2px solid transparent;
@@ -699,7 +699,7 @@ box-shadow: 0px 0px 3px 2px rgb(0, 195, 255);
 }
 
 #email-div{
-        width: 460px;
+        width: 0px;
         height: 50px;
         font-size: 16px;
         margin-top: 200px;
@@ -712,7 +712,7 @@ box-shadow: 0px 0px 3px 2px rgb(0, 195, 255);
 }
 
 #phone-number-div{
-    width: 460px;
+    width: 0px;
     height: 50px;
     font-size: 16px;
     margin-top: 275px;
